@@ -34,8 +34,20 @@ public class ExAula04 {
     
     public static void ex06(){
 
-        float[] vet = new float[5];
+        float[] notas = new float[5];
         float[] pesos = {4, 1, 2, 2, 1};
+        float media = 0;
+
+        System.out.println("/nEXERCÍCIO 06");
+        System.out.println("Informe as 5 notas do aluno: ");
+
+        for (int i = 0; i < pesos.length; i++){
+            System.out.println("Nota " + (i + 1) + ": ");
+            notas[i] = Console.lerFloat();
+            media += notas[i] * pesos[i];    
+        }
+
+        media /= 10;
 
     }
 
