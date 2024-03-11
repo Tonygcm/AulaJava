@@ -11,7 +11,7 @@ public static void main(String[] args) {
     // Declaração de novo objeto do tipo aluno
     Aluno a1 = new Aluno();
 
-    // Armazenar dados no a1
+    //  Armazenar dados no a1
     a1.nome = "Guilherme Coelho";
     a1.curso = "ADS";
     a1.turno = "Manhã";
@@ -22,7 +22,31 @@ public static void main(String[] args) {
         "Curso: " + a1.curso + "\n" +
         "Turno: " + a1.turno + "\n" +
         "Campus: " + a1.campus);
+    
 
+    Aluno a2 = new Aluno();
+
+    System.out.println("\nCadastro do aluno a2:");
+
+    System.out.println("Informe o nome do aluno: ");
+    a2.nome = Console.lerString();
+    System.out.println("Informe o curso do aluno: ");
+    a2.curso = Console.lerString();
+    System.out.println("Informe o turno do aluno: ");
+    a2.turno = Console.lerString();
+    System.out.println("Informe o campus do aluno: ");
+    a2.campus = Console.lerString();
+
+
+    System.out.println("\nDados do aluno a2: ");
+    System.out.println(a2.toString());
+
+
+    // Intanciando aluno a3
+    Aluno a3 = new Aluno("Fulano", "ADS", "Noite", "Osório");
+
+    System.out.println("\nDados do aluno a3: ");
+    System.out.println(a3.toString());
 }
 
 }
