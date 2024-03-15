@@ -12,7 +12,7 @@ public class Console {
         return leitor.nextFloat();
     }
 
-    public static String leString() {
+    public static String lerString() {
         return leitor.nextLine();
     }
 }
