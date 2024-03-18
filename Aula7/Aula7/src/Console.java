@@ -9,14 +9,14 @@ public class Console {
     // Método para ler e retornar um valor int:
     public static int lerInt() {
         int valor = leitor.nextInt();
-        leitor.nextInt();
+        leitor.nextLine();
         return valor;
     }
 
     // Método para ler e retornar um valor float:
     public static float lerFloat() {
         float valor = leitor.nextFloat();
-        leitor.nextFloat();
+        leitor.nextLine();
         return valor;
     }
 
