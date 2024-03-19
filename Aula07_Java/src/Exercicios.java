@@ -65,20 +65,30 @@ public class Exercicios {
     public static void ex02() {
 
 
-        Calculadora o1 = new Calculadora();
+        Calculadora calc = new Calculadora();
+        float x;
+        float y;
+        float result;
 
+        System.out.println("Informe dois valores reais:");
+        System.out.print("x: ");
+        x = Console.lerFloat();
 
-        System.out.println("Digite um numero: ");
-            o1.x = Console.lerFloat();
-        System.out.println("Digite um numero: ");
-            o1.y = Console.lerFloat();
+        System.out.print("y: ");
+        y = Console.lerFloat();
 
-        o1.somar();
-        o1.subtrair();
-        o1.dividir();
-        o1.multiplicar();
+        System.out.println("Resultados:");
+        result = calc.somar(x, y);
+        System.out.println("Soma: " + result);
 
-        System.out.println("Soma: " + o1.soma + "\nSubtração: " + o1.sub + "\nDivisão: " + o1.div + "\nMultiplicação: " + o1.mult);
+        result = calc.subtrair(x, y);
+        System.out.println("Subtração: " + result);
+
+        result = calc.multiplicar(x, y);
+        System.out.println("Multiplicação: " + result);
+
+        result = calc.dividir(x, y);
+        System.out.println("Divisão: " + result);
 
         
 
