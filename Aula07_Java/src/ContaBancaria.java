@@ -12,15 +12,15 @@ public class ContaBancaria {
     }
 
     public void depositar(float valor){
-        float deposito = this.saldo + valor;
+        saldo += valor;
     }
 
-    public void sacar(){
-
+    public void sacar(float valor){
+        saldo -= valor;
     }
 
     public void extrato(){
-        
+        System.out.println("O saldo da conta");
     }
     
 }

@@ -1,35 +1,27 @@
 public class Calculadora {
 
-    float x;
-    float y;
-    float soma;
-    float sub;
-    float div;
-    float mult;
-
     public Calculadora(){
 
     }
 
-    public void somar(){
-        soma = x + y;
+    public float somar(float x, float y){
+        return x + y;
     }
 
-    public void subtrair(){
-        sub = x - y;
+    public float subtrair(float x, float y){
+        return x - y;
     }
 
-    public void dividir(){
-        if(y != 0){
-            div = x / y;
+    public float dividir(float x, float y){
+        if (y == 0) {
+            return x;
         }
-        else{
-            System.out.println("Não é possível dividir por zero! ");
-        }
+
+        return x / y;
     }
 
-    public void multiplicar(){
-        mult = x * y;
+    public float multiplicar(float x, float y){
+        return x * y;
     }    
     
 }
