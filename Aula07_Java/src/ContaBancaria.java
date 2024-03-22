@@ -38,10 +38,12 @@ public class ContaBancaria {
     }
 
     public void depositar(float valor){
+        System.out.println("\nSacando " + valor + " da conta: " + idConta);
         saldo += valor;
     }
 
     public void sacar(float valor){
+        System.out.println("\nSacando " + valor + " da conta: " + idConta);
         saldo -= valor;
     }
 
