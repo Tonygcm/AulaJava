@@ -6,11 +6,15 @@ public class Exercicios {
 
     public static void main(String[] args) {
 
-        ex02();
+        ex03();
 
     }
 
-    /*
+    
+
+    public static void ex01() {
+
+        /*
      * EXERCÍCIO 01:
      * Imagine uma pequena biblioteca pessoal, uma coleção que você começou a
      * construir com seus livros favoritos. No entanto, com o tempo e o acúmulo de
@@ -28,8 +32,6 @@ public class Exercicios {
      * todos os dados do livro na tela.”
      */
 
-    public static void ex01() {
-
         Livro o1 = new Livro();
             o1.titulo = "Percy Jackson";
             o1.autor = "Rick Riordan";
@@ -39,7 +41,11 @@ public class Exercicios {
 
     }
 
-    /*
+    
+
+    public static void ex02() {
+
+        /*
      * EXERCÍCIO 02:
      * Num mundo repleto de equações e problemas matemáticos, um estudante de
      * programação se depara com o desafio de simplificar suas tarefas diárias. Ele
@@ -61,8 +67,6 @@ public class Exercicios {
      * cálculos diários como também servirá como um excelente exercício de
      * programação.”
      */
-
-    public static void ex02() {
 
 
         Calculadora calc = new Calculadora();
@@ -95,7 +99,11 @@ public class Exercicios {
 
     }
 
-    /*
+    
+
+    public static void ex03() {
+
+        /*
      * EXERCÍCIO 03:
      * Em uma pequena cidade, um desenvolvedor entusiasta decide criar um sistema
      * para ajudar a gerenciar as contas bancárias dos cidadãos locais. Com o
@@ -119,11 +127,34 @@ public class Exercicios {
      * avançados como herança e polimorfismo, que serão explorados futuramente.”
      */
 
-    public static void ex03() {
+        ContaBancaria c1 = new ContaBancaria(453, "Xampson", 12000.00f);
+        ContaBancaria c2 = new ContaBancaria(533, "Alguem", 444.98f);
+
+        //ContaBancaria c2 = new ContaBancaria();
+        //c1.setIdConta(453);
+        //c1.setNomeTitular(Xampson);
+        //c1.setSaldo(12000);
+
+        //alterar dado da conta
+
+        c1.setNomeTitular("Fulano");
+
+        //mostrar dados da conta
+
+        System.out.println("Nº Conta: " + c1.getIdConta());
+        System.out.println("Titular: " + c1.getIdConta());
+        System.out.println("Saldo atual: R$ " + c1.getIdConta());
+
+        //mostrar dados da conta 2
+        c2.extrato();
 
     }
 
-    /*
+    
+
+    public static void ex04() {
+
+        /*
      * EXERCÍCIO 04:
      * Em um mundo cada vez mais digital, um grupo de amigos apaixonados por
      * videogames percebe uma oportunidade de combinar seus hobbies com a prática de
@@ -148,11 +179,13 @@ public class Exercicios {
      * objeto.”
      */
 
-    public static void ex04() {
-
     }
 
-    /*
+    
+
+    public static void ex05() {
+
+        /*
      * EXERCÍCIO 05:
      * Em uma tranquila cidade conhecida por sua paixão por automobilismo, um grupo
      * de entusiastas de carros clássicos decide organizar um evento para exibir
@@ -178,16 +211,16 @@ public class Exercicios {
      * objetos e a implementação de métodos.”
      */
 
-    public static void ex05() {
-
     }
 
-    /*                                                                  EXERCÍCIO 06 (BÔNUS):
+   
+
+    public static void ex06() {
+
+         /*                                                                  EXERCÍCIO 06 (BÔNUS):
     Inspirado pela organização de um grande evento de networking, onde os participantes trocam contatos e informações profissionais, um desenvolvedor decide criar um sistema para gerenciar uma agenda de contatos. Este sistema ajudará os usuários a manter suas conexões organizadas, permitindo-lhes adicionar, remover e buscar contatos facilmente.
         Dica:
             “Crie as classes Agenda e Contato em Java. A classe Contato deve armazenar informações como nome e telefone, enquanto a classe Agenda deve gerenciar uma lista de contatos, com métodos para adicionar novos contatos, remover contatos existentes e buscar contatos por nome. Este exercício reforça o uso de coleções em Java, além de aplicar os princípios de encapsulamento e interação entre objetos.” */
-
-    public static void ex06() {
 
     }
 }
