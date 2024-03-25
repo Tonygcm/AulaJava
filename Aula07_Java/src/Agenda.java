@@ -1,28 +1,61 @@
 public class Agenda {
 
     private Contato[] agenda = new Contato[3];
-    private int i;
+    private int p;
 
     public Agenda() {
+
         agenda = new Contato[3];
-        i = 0;
+        p = 0;
+
     }
 
     public void addContato(Contato contato) {
-        if (i >= agenda.length) {
+
+        if (p >= agenda.length) {
             System.out.println("Limite da agenda atingido! ");
             return;
         }
-        agenda[i] = new Contato();
-        agenda[i] = contato;
-        i++;
+        agenda[p] = new Contato();
+        agenda[p] = contato;
+        p++;
+
+        System.out.println("\nContato " + contato.getNome() + "(" + contato.getTelefone() + ") foi salvo na agenda!\n");
+
     }
 
-    public void delContato() {
+    public void limparAgenda() {
+
+        for (int i = 0; i < agenda.length; i++) {
+            agenda[i] = new Contato();
+        }
+
+        p = 0;
+
+        System.out.println("\nAgenda foi limpa. Sem contatos cadastrados. \n");
 
     }
 
-    public void buscarContato() {
+    public void buscarContato(String nome) {
+
+        for (int i = 0; i < p; i++) {
+            if (agenda[i].getNome().equals(nome)) {
+                System.out.println("\nContato localizado: \n" + agenda[i].toString());
+                return;
+            }
+        }
+
+        System.out.println("\nContato: " + nome + ", não foi localizado. ");
+
+    }
+
+    public void delContato(Contato contato) {
+
+        /*
+         * agenda[i] = new Contato();
+         * agenda[i] = contato;
+         * i--;
+         */
 
     }
 

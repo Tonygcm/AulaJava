@@ -4,7 +4,7 @@ public class Exercicios {
 
     public static void main(String[] args) {
 
-        ex05();
+        ex06();
 
     }
 
@@ -241,9 +241,25 @@ public class Exercicios {
         Contato c1 = new Contato();
 
         c1.setNome("Random");
-        c1.setTelefone(999995555);
+        c1.setTelefone("(41) 99999-5555");
 
-        Contato c2 = new Contato("Xampson", 999997777);
+        Contato c2 = new Contato("Xampson", "(41) 99999-7777");
+        Contato c3 = new Contato("Aleatório", "(41) 99999-3333");
+
+        // Instancia da agenda
+        Agenda a1 = new Agenda();
+
+        a1.addContato(c1);
+        a1.addContato(c2);
+        a1.addContato(c3);
+
+        a1.limparAgenda();
+
+        a1.addContato(c1);
+        a1.addContato(c2);
+
+        a1.buscarContato("Xampson");
+        a1.buscarContato("Guilherme");
 
     }
 }

@@ -3,7 +3,7 @@ public class Contato {
     // Atributos
 
     private String nome;
-    private int telefone;
+    private String telefone;
     // private String email;
 
     // Construtores
@@ -11,7 +11,7 @@ public class Contato {
     public Contato() {
     }
 
-    public Contato(String nome, int telefone) {
+    public Contato(String nome, String telefone) {
         this.nome = nome;
         this.telefone = telefone;
     }
@@ -26,12 +26,18 @@ public class Contato {
         this.nome = nome;
     }
 
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(int telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+
+    @Override
+    public String toString() {
+        String txt = "Nome: " + nome + " (" + telefone + ")";
+        return txt;
     }
 
     /*
