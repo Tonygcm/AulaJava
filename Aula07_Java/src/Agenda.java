@@ -38,15 +38,17 @@ public class Agenda {
 
     public void buscarContato(String nome) {
 
+        boolean encontrou = false;
         for (int i = 0; i < p; i++) {
             if (agenda[i].getNome().equals(nome)) {
                 System.out.println("\nContato localizado: \n" + agenda[i].toString());
-                return;
+                encontrou = true;
             }
         }
 
-        System.out.println("\nContato: " + nome + ", não foi localizado. ");
-
+        if (!encontrou) { // encontrou == false
+            System.out.println("\nContato: " + nome + ", não foi localizado. ");
+        }
     }
 
     public void delContato(Contato contato) {
