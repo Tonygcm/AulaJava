@@ -238,5 +238,12 @@ public class Exercicios {
          * interação entre objetos.”
          */
 
+        Contato c1 = new Contato();
+
+        c1.setNome("Random");
+        c1.setTelefone(999995555);
+
+        Contato c2 = new Contato("Xampson", 999997777);
+
     }
 }
