@@ -69,7 +69,7 @@ public class Principal {
     }
 
 
-    /*                               EXERCÍCIO 01: Sistema de Gerenciamento de Eventos
+    /*                               EXERCÍCIO 01: Sistema de Gerenciamento de Eventos .
 
 
     Uma empresa de eventos precisa de um sistema para gerenciar a lista de eventos futuros. 
