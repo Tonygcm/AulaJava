@@ -2,18 +2,18 @@ public class Funcionario {
 
     // protected (classes herdadas conseguem utilizar as variaveis)
 
-    private String matricula;
+    private int matricula;
     private String nome;
 
     public Funcionario(){
     }
 
-    public Funcionario(String matricula, String nome) {
+    public Funcionario(int matricula, String nome) {
         this.matricula = matricula;
         this.nome = nome;
     }
     
-    public String getMatricula() {
+    public int getMatricula() {
         return matricula;
     }
 
@@ -21,7 +21,7 @@ public class Funcionario {
         return nome;
     }
 
-    public void setMatricula(String matricula) {
+    public void setMatricula(int matricula) {
         this.matricula = matricula;
     }
 

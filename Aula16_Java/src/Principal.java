@@ -4,6 +4,8 @@ public class Principal {
         
         //chamada de métodos para executar o programa
 
+        Sistema.executar();
+
     }
     
 }

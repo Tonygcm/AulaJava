@@ -5,7 +5,7 @@ public class Programador extends Funcionario{
     public Programador() {
     }
 
-    public Programador(String matricula, String nome, String linguagens) {
+    public Programador(int matricula, String nome, String linguagens) {
         super(matricula, nome);
         this.linguagens = linguagens;
     }
